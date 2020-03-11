@@ -46,3 +46,4 @@ telecom.iml
 /producer/target/
 out/
 /.idea/
+/consumer/target/
