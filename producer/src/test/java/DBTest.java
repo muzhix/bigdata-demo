@@ -1,5 +1,5 @@
 import org.junit.Test;
-import producer.User;
+import net.hanbd.telecom.producer.User;
 
 import java.sql.*;
 import java.util.ArrayList;

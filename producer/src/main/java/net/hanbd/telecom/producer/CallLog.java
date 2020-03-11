@@ -1,4 +1,4 @@
-package producer;
+package net.hanbd.telecom.producer;
 
 import com.google.common.base.Joiner;
 import lombok.AllArgsConstructor;

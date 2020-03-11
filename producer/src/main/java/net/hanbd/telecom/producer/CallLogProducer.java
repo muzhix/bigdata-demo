@@ -1,4 +1,4 @@
-package producer;
+package net.hanbd.telecom.producer;
 
 import java.io.*;
 import java.time.Duration;

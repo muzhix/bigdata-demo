@@ -1,4 +1,4 @@
-package producer;
+package net.hanbd.telecom.producer;
 
 import java.io.File;
 import java.sql.*;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author hanbd
  */
-public class App {
+public class ProducerApp {
 
     private static List<User> getUsersFormDb() {
         final String JDBC_URL = "jdbc:mysql://centos:3306/telecom?useSSL=false";
@@ -38,7 +38,7 @@ public class App {
             return;
         }
 
-        CallLogProducer producer = new CallLogProducer(App.getUsersFormDb(), "2020-01-01T00:00:00",
+        CallLogProducer producer = new CallLogProducer(ProducerApp.getUsersFormDb(), "2020-01-01T00:00:00",
                 "2020-01-30T00:00:00");
 
         int num = Integer.parseInt(args[0]);

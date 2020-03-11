@@ -1,7 +1,7 @@
 import org.junit.Test;
-import producer.CallLog;
-import producer.CallLogProducer;
-import producer.User;
+import net.hanbd.telecom.producer.CallLog;
+import net.hanbd.telecom.producer.CallLogProducer;
+import net.hanbd.telecom.producer.User;
 
 import java.io.File;
 import java.util.ArrayList;
