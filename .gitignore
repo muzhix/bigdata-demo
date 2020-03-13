@@ -47,3 +47,4 @@ telecom.iml
 out/
 /.idea/
 /consumer/target/
+/analysis/target/
