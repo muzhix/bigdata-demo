@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 生产通信纪录测试数据。
+ *
  * @author hanbd
  */
 public class ProducerApp {
@@ -33,16 +35,18 @@ public class ProducerApp {
 
 
     public static void main(String[] args) {
-        if (args.length < 2) {
-            System.out.println("usage: [num] [filePath]");
-            return;
-        }
-
-        CallLogProducer producer = new CallLogProducer(ProducerApp.getUsersFormDb(), "2020-01-01T00:00:00",
-                "2020-01-30T00:00:00");
-
         int num = Integer.parseInt(args[0]);
         String filePath = args[1];
+        String from = args[2];
+        String to = args[3];
+
+        System.out.println(num);
+        System.out.println(filePath);
+        System.out.println(from);
+        System.out.println(to);
+
+        CallLogProducer producer = new CallLogProducer(ProducerApp.getUsersFormDb(), from, to);
+
 
         boolean b = producer.produceAndWrite(num, new File(filePath));
         if (b) {
